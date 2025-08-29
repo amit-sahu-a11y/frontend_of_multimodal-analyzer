@@ -3,7 +3,7 @@ export async function analyzeData(text, file) {
   formData.append("text", text);
   if (file) formData.append("image", file);
 
-  const res = await fetch("http://localhost:8000/analyze", {
+  const res = await fetch("https://4fc6dfa955f1.ngrok-free.app/analyze", {
     method: "POST",
     body: formData
   });
